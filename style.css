@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color: #FFF;
+    --text-color: #323238;
+    --primary-color: #02799D;
+    --secondary-color: #E1E1E6;
+    font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: grid;
+    height: 100vh;
+    place-content: center;
+}
+.app{
+    display: flex;
+    justify-items: center;
+    gap: 19.2rem;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.7rem;
+}
+#timer{
+    display: flex;
+    
+    color: var(--text-color);
+    font-size: 16.6rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.settings{
+    display: flex;
+    
+    
+    gap: 7rem;
+}
+.settings button{
+    display: flex;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    width: 4.8rem;
+    height: 4.8rem;
+    gap: 4rem;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.sound{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row: auto auto;
+    grid-column-gap: 3.2rem;
+    grid-row-gap: 3.2rem;
+}
+.sound button{
+    width: 13.8rem;
+    height: 15.2rem;
+    border-radius: 2.4rem;
+    border: none;
+    cursor: pointer;
+
+}
+.ph{
+    font-size: 600%;
+}
+.hideColor{
+    background-color: #02799D;
+    color: white;
+}
